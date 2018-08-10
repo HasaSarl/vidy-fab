@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<odoo>
+	<record model="ir.ui.view" id="vidy_fab_event_form">
+		<field name="name">Rendez-vous</field>
+		<field name="model">calendar.event</field>
+		<field name="type">form</field>
+		<field name="inherit_id" ref="calendar.view_calendar_event_form" />
+		<field name="arch" type="xml">
+			<field name="location" position="replace" invisible="1"/>
+        <field name="categ_ids" position="before">
+
+        	<field name="x_location" string="Lieu"/>
+        </field>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="vidy_fab_calendar_event_form_popup">
+		<field name="name">Rendez-vous</field>
+		<field name="model">calendar.event</field>
+		<field name="type">form</field>
+		<field name="inherit_id" ref="calendar.view_calendar_event_form_popup"/>
+		<field name="arch" type="xml">
+
+        <field name="location" position="replace" invisible="0"/>
+        <field name="categ_ids" position="before">
+
+        	<field name="x_location" string="Lieu"/>
+        </field>
+    </field>
+</record>
+</odoo>
+
