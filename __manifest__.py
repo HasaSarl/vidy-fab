@@ -39,11 +39,13 @@
     "demo_xml" : [],
     "data" : [
 		"views/calendar_event_view.xml",
-      
+		"views/vidy_assets.xml",
+        "views/partner_view.xml"
 	],
 	'css' : [
 			],
 	'js' : [
+		"static/src/js/datepicker.js"
 		],
 	'qweb' : [
     ],

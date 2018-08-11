@@ -1,0 +1,15 @@
+<odoo>
+	<record id="vidy_partner_form" model="ir.ui.view">
+		<field name="name">vidy.partner.form</field>
+		<field name="model">res.partner</field>
+		<field name="inherit_id" ref="smartcab.smartcab_partner_form"/>
+		<field name="type">form</field>
+		<field name="priority" eval="18"/>
+		<field name="arch" type="xml">
+        
+			<field name="birthdate" required="True" position="replace">
+                <field name="birthdate" required="True" class="nodatepicker"/>
+            </field>
+		</field>
+	</record>
+</odoo>
